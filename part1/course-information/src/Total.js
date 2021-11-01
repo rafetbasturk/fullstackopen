@@ -1,8 +1,8 @@
-const Total = ({ content }) => {
-  const total = content.reduce((prev, cur) => prev += cur.exercises, 0)
+const Total = ({ parts }) => {
+  const total = parts.reduce((prev, cur) => prev += cur.exercises, 0)
   return (
     <>
-      <p>Number of exercises {total}</p>
+      <p>Number of exercises {total} </p>
     </>
   )
 }
